@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:wght@400;500&family=Rethink+Sans&family=Rubik:wght@300;400;500;600;700&family=Salsa&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: uppercase;
+  box-shadow: 0px 6px 6px -6px gray;
+  --webkit-box-shadow: 0px 8px 6px -6px gray;
+  border-bottom: 0.5px solid gray !important;
+  background-color: gray;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid gray;
+}
+.footer {
+  color: white;
+  padding: 25px;
+  background: #121212;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient();
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+.pnf {
+  display: flex;
+  min-height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5 5 5 5;
+}
+
+.contact-container {
+  display: flex;
+  min-height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10;
+}
+
+.contact-heading {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.contact-para {
+  padding: 10;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.reg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  margin-top: 10;
+}
+
+.permanently-gray {
+  background-color: #747070;
+  color: #e9edf0;
+}
+
+.product-link {
+  text-decoration: none !important;
+  color: #000000;
+}
+
+.active-link {
+  background-color: #343a40; /* Dark background color */
+  color: white; /* White text color */
+}
+
+.admin-menu {
+  border: 1px solid #000000; /* Border color */
+  border-radius: 20px; /* Border radius to create cylindrical shape */
+  padding: 10px; /* Add padding for content */
+}
