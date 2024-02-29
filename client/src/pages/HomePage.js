@@ -9,6 +9,26 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
 import { toast } from "react-toastify";
 import { FaFilter } from "react-icons/fa";
+import { MdExpandMore } from "react-icons/md";
+import { IoReload } from "react-icons/io5";
+import banner1 from "../assets/images/banner1.jpg";
+
+import banner from "../assets/images/banner.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -108,7 +128,6 @@ export const HomePage = () => {
     try {
       const { data } = await axios.post(
         `${process.env.REACT_APP_API}/api/v1/product/product-filters`,
-
         { checked, radio }
       );
       setProducts(data?.products);
@@ -119,6 +138,56 @@ export const HomePage = () => {
 
   return (
     <Layout>
+      <div className="banner-container">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          spaceBetween={10}
+          slidesPerView={2}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+          loop={true}
+          autoplay={{ delay: 2000 }}
+        >
+          <SwiperSlide>
+            <img
+              src={banner1}
+              className="banner-img"
+              alt="bannerimage"
+              width={"100%"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={banner1}
+              className="banner-img"
+              alt="bannerimage"
+              width={"100%"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={banner1}
+              className="banner-img"
+              alt="bannerimage"
+              width={"100%"}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src={banner1}
+              className="banner-img"
+              alt="bannerimage"
+              width={"100%"}
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+      <hr />
+
       <div className="row mt-3">
         <div className="col-md-2">
           <h4 className="text-center">
@@ -205,7 +274,7 @@ export const HomePage = () => {
                   setPage(page + 1);
                 }}
               >
-                {loading ? "Loading..." : "Load more"}
+                {loading ? <IoReload /> : <MdExpandMore />}
               </button>
             )}
           </div>

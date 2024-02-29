@@ -33,7 +33,7 @@ const Products = () => {
           </div>
           <div className="col-md-9">
             <h1 className="text-center">All Products </h1>
-            <div className="d-flex">
+            <div className="row row-cols-1 row-cols-md-3 g-4">
               {products?.map((p) => (
                 <Link
                   className="product-link"
