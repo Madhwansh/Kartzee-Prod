@@ -1,55 +1,73 @@
-Welcome to the Kartzee E-comm Project with Admin Dashboard Controls 
+# Welcome to the Kartzee E-commerce Project with Admin Dashboard Controls
 
-Installation->
+## Installation
 
-For the client side / FrontEnd (react.js Framework has been used) , for the styling (Bootstrap and External css has been used) . Hence for the installation we just need to run the npm start command and then provide the localhost server link where the backend server would be hosted in a env file 
+### Client Side / Frontend
+The client-side utilizes the React.js framework with Bootstrap and External CSS for styling. To install, simply run the following command:
+```bash
+npm start
+```
+Ensure to provide the localhost server link where the backend server would be hosted in an env file.
 
+### Server Side / Backend
+The backend is built with Express, MongoDB, and Node.js. In the root directory, create an env file where the following configurations need to be stored:
+- Port
+- MongoDB URL
+- JWT key
+- BRAINTREE API keys (used for payment integration within the app)
 
-For the server side / Backend (Express , mongodb and node.js has been used ) , we need to create a env file in root directory where the Port , Mongodb url , JWT key and BRAINTREE API keys would needed to be stored , Braintree is used for the payment integration within the app.
+## Admin Dashboard
 
+### AdminMenu
+The Admin Dashboard features a side panel called AdminMenu, located in [Client->src->components->AdminMenu.js](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb). AdminMenu contains options and routes to specific screens.
 
-Admin Dashboard
+![AdminMenu](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb)
 
+### AdminDashboard
+Upon opening the Dashboard screen, an introductory screen is presented, containing the admin credentials and the operations that can be performed by the admin. Find the AdminDashboard file at [client->src->pages->Admin->AdminDashboard.js](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703).
 
-Firstly for the admin dashboard , i created a sidepanel called AdminMenu which is present in the (Client->src->components->AdminMenu.js) , the AdminMenu.js contains the options and their routing to the specific screen 
-<img width="236" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb">
+![AdminDashboard](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703)
 
-When we open the Dashboard screen initally , an introductory screen is being presented which contains the admin credentials and the operations which can be performed by the admin , the AdminDashboard file is located at (client->src->pages->Admin->AdminDashboard.js)
-<img width="841" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703">
+### Summary
+The Summary screen provides a summary of key metrics available in the app, including the number of orders, users, products, and total revenue. These metrics dynamically update as products are added, orders are placed, users join, and revenue is updated.
 
-Now we coming towards the First option in AdminMenu i.e Summary (client->src->pages->Admin->Summary.js)
-Summary screen provides the summary of Key metrics which are available in the app . Number of orders , users , products and total revenue is being display initially , these metrics are dynamic i.e they get updated as the products being added , orders being placed , users being joined and revenue being updated 
-<img width="710" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b013a03e-ca49-4297-9834-b776f65c088b">
+![Summary](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b013a03e-ca49-4297-9834-b776f65c088b)
 
-After this screen , there are two charts being presented , First chart is of the Category to Product ratio which shows the Number of products being available in the specific category , second chart is of the revenue and profit being generated in a month.(Client->src->components->ProductCategoryBarChart.js)  , (Client->src->components->AdminMenu.js->OrderAreaChart.js)
-<img width="700" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/20649cf2-e41c-482f-aefc-bee947ce0073">
+Additionally, two charts are presented:
+1. Category to Product ratio, showing the number of products available in each category.
+2. Revenue and profit generated in a month.
 
-Finally in the summary screen there is an OrderCalendar component which displays the calendar and provides the date which displays the order placed on the certain date with its order id
-<img width="706" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/55e5399c-7129-40cc-b2d8-d3e9949125f8">
+![Charts](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/20649cf2-e41c-482f-aefc-bee947ce0073)
 
+Finally, the summary screen includes an OrderCalendar component displaying the calendar and orders placed on specific dates with their corresponding order IDs.
 
-Then we move to the second option called CreateCategory , in this screen we can add a new category where the product would belong to , edit the category name and delete the category
-<img width="443" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/90d3d479-dfe6-4e29-9441-2d0df4ab22e2">
+![OrderCalendar](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/55e5399c-7129-40cc-b2d8-d3e9949125f8)
 
-Third option is Create Product where we can add a product by entering the required details 
-<img width="577" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/188ad785-1501-4992-a229-70e8d40d3459">
+### Create Category
+This option allows adding a new category where products would belong to, editing the category name, and deleting the category.
 
-Fourth Option is All Products where all the products are being displayed in a tabular format and details are being shown , and there is an edit where we can update and delete the product
+![CreateCategory](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/90d3d479-dfe6-4e29-9441-2d0df4ab22e2)
 
-Products Screen:-
-<img width="706" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/eb9b1054-fd01-44e1-8795-c672b50c2384">
+### Create Product
+Here, products can be added by entering the required details.
 
-Edit Product screen:-
-<img width="590" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/c86ccae6-6d93-49f0-b702-2027b7241e3e">
+![CreateProduct](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/188ad785-1501-4992-a229-70e8d40d3459)
 
-FIfth Option is the All Orders screen where we can toggle the status of the order placed by the users , and see the details of the order being placed by the user
-<img width="722" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/6e8329d4-b26b-4428-9592-61389deaab89">
+### All Products
+All products are displayed in a tabular format, showing details, and providing options to edit and delete the product.
 
-Lastly is the All Users screen where we can the users available on the app and can see the required details of the user,
-<img width="651" alt="image" src="https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b655ae6d-10eb-41bd-8253-a27fd280503f">
+Products Screen:
+![ProductsScreen](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/eb9b1054-fd01-44e1-8795-c672b50c2384)
 
+Edit Product screen:
+![EditProduct](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/c86ccae6-6d93-49f0-b702-2027b7241e3e)
 
+### All Orders
+This section allows toggling the status of orders placed by users and viewing order details.
 
+![AllOrders](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/6e8329d4-b26b-4428-9592-61389deaab89)
 
+### All Users
+Here, all users available on the app and their details can be viewed.
 
-
+![AllUsers](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b655ae6d-10eb-41bd-8253-a27fd280503f)
