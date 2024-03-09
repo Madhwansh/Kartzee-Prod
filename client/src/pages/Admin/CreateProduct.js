@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Layout } from "../../components/Layout";
 import { AdminMenu } from "../../components/AdminMenu";
 import axios from "axios";
@@ -75,7 +74,9 @@ const CreateProduct = () => {
           <div className="col-md-9">
             <h1>Add Product</h1>
             <div className="m-1 w-75">
+              <label htmlFor="category">Category:</label>
               <Select
+                id="category"
                 bordered={false}
                 placeholder="Select a Category"
                 size="large"
@@ -91,18 +92,19 @@ const CreateProduct = () => {
                   </Option>
                 ))}
               </Select>
-              <div className="mb-3">
-                <label className="btn btn-outline-dark col-md-12">
-                  {photo ? photo.name : "Select photo"}
-                  <input
-                    type="file"
-                    name="photo"
-                    accept="image/*"
-                    onChange={(e) => setPhoto(e.target.files[0])}
-                    hidden
-                  />
-                </label>
-              </div>
+
+              <label htmlFor="photo" className="btn btn-outline-dark col-md-12">
+                {photo ? photo.name : "Select photo"}
+                <input
+                  id="photo"
+                  type="file"
+                  name="photo"
+                  accept="image/*"
+                  onChange={(e) => setPhoto(e.target.files[0])}
+                  hidden
+                />
+              </label>
+
               <div className="mb-3">
                 {photo && (
                   <div className="text-center">
@@ -115,63 +117,66 @@ const CreateProduct = () => {
                   </div>
                 )}
               </div>
-              <div className="mb-3">
-                <input
-                  type="text"
-                  value={name}
-                  placeholder="Enter a Name"
-                  className="form-control"
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  type="text"
-                  value={description}
-                  placeholder="write a description"
-                  className="form-control"
-                  onChange={(e) => setDescription(e.target.value)}
-                />
-              </div>
 
-              <div className="mb-3">
-                <input
-                  type="number"
-                  value={price}
-                  placeholder="write a Price"
-                  className="form-control"
-                  onChange={(e) => setPrice(e.target.value)}
-                />
-              </div>
-              <div className="mb-3">
-                <input
-                  type="number"
-                  value={quantity}
-                  placeholder="write a quantity"
-                  className="form-control"
-                  onChange={(e) => setQuantity(e.target.value)}
-                />
-              </div>
-              <div className="mb-3">
-                <Select
-                  bordered={false}
-                  placeholder="Select Shipping "
-                  size="large"
-                  showSearch
-                  className="form-select mb-3"
-                  onChange={(value) => {
-                    setShipping(value);
-                  }}
-                >
-                  <Option value="0">No</Option>
-                  <Option value="1">Yes</Option>
-                </Select>
-              </div>
-              <div className="mb-3">
-                <button className="btn btn-dark" onClick={handleCreate}>
-                  Add Product
-                </button>
-              </div>
+              <label htmlFor="name">Name:</label>
+              <input
+                id="name"
+                type="text"
+                value={name}
+                placeholder="Enter a Name"
+                className="form-control"
+                onChange={(e) => setName(e.target.value)}
+              />
+
+              <label htmlFor="description">Description:</label>
+              <textarea
+                id="description"
+                type="text"
+                value={description}
+                placeholder="write a description"
+                className="form-control"
+                onChange={(e) => setDescription(e.target.value)}
+              />
+
+              <label htmlFor="price">Price:</label>
+              <input
+                id="price"
+                type="number"
+                value={price}
+                placeholder="write a Price"
+                className="form-control"
+                onChange={(e) => setPrice(e.target.value)}
+              />
+
+              <label htmlFor="quantity">Quantity:</label>
+              <input
+                id="quantity"
+                type="number"
+                value={quantity}
+                placeholder="write a quantity"
+                className="form-control"
+                onChange={(e) => setQuantity(e.target.value)}
+              />
+
+              <label htmlFor="shipping">Shipping:</label>
+              <Select
+                id="shipping"
+                bordered={false}
+                placeholder="Select Shipping "
+                size="large"
+                showSearch
+                className="form-select mb-3"
+                onChange={(value) => {
+                  setShipping(value);
+                }}
+              >
+                <Option value="0">No</Option>
+                <Option value="1">Yes</Option>
+              </Select>
+
+              <button className="btn btn-dark" onClick={handleCreate}>
+                Add Product
+              </button>
             </div>
           </div>
         </div>

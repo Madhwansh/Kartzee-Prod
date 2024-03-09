@@ -15,7 +15,7 @@ import AdminRoute from "./components/routes/AdminRoute";
 import { AdminDashboard } from "./pages/Admin/AdminDashboard";
 import CreateCategory from "./pages/Admin/CreateCategory";
 import CreateProduct from "./pages/Admin/CreateProduct";
-import User from "./pages/Admin/User";
+import User from "./pages/Admin/Summary";
 import Profile from "./user/Profile";
 import Orders from "./user/Orders";
 import Products from "./pages/Admin/Products";
@@ -24,6 +24,8 @@ import Search from "./pages/Search";
 import ProductDetails from "./pages/ProductDetails";
 import CartPage from "./pages/CartPage";
 import AdminOrders from "./pages/Admin/AdminOrders";
+import TotalUsers from "./pages/Admin/TotalUsers";
+import Summary from "./pages/Admin/Summary";
 
 function App() {
   return (
@@ -44,8 +46,9 @@ function App() {
           <Route path="admin/create-product" element={<CreateProduct />} />
           <Route path="admin/product/:slug" element={<UpdateProduct />} />
           <Route path="admin/products" element={<Products />} />
-          <Route path="admin/users" element={<User />} />
+          <Route path="admin/summary" element={<Summary />} />
           <Route path="admin/orders" element={<AdminOrders />} />
+          <Route path="admin/totalusers" element={<TotalUsers />} />
         </Route>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />

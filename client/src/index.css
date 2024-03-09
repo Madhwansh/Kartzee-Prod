@@ -140,3 +140,188 @@
 .swiper-button-prev {
   color: black;
 }
+
+.intro-container {
+  margin-top: 20px;
+}
+
+.intro-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.card {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.admin-info {
+  margin-bottom: 10px;
+}
+
+.operations-container {
+  margin-top: 30px;
+}
+
+.operations-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.operations-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.operations-list li {
+  margin-bottom: 10px;
+}
+
+/* Add more styling to the form */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  background-color: #1d2124;
+}
+
+.active-link {
+  background-color: black !important; /* Change background color of active link */
+  color: white !important; /* Change text color of active link */
+}
+
+.admin-menu {
+  border: 2px solid black; /* Add border */
+  border-radius: 20px; /* Add border radius */
+  padding: 20px; /* Add padding */
+  background-color: #f2f2f2; /* Set background color */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Set flex direction to column */
+  height: 100%; /* Set height to 100% */
+}
+
+.table {
+  font-size: 16px; /* Increase font size */
+}
+
+.table th,
+.table td {
+  padding: 12px; /* Add padding */
+}
+
+.table th {
+  background-color: #f2f2f2; /* Add background color to header */
+}
+
+.table th,
+.table td {
+  border: 1px solid #dee2e6; /* Add border */
+}
+
+.table td {
+  vertical-align: middle; /* Center-align content vertically */
+}
+
+.table-responsive {
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 24px;
+}
+
+.calendar-container {
+  margin-top: 20px;
+}
+
+.rbc-calendar {
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rbc-month-view {
+  border-radius: 5px;
+}
+
+.rbc-header {
+  background-color: #f2f2f2;
+}
+
+.rbc-header + .rbc-header {
+  border-left: 1px solid #ccc;
+}
+
+.rbc-row {
+  border-top: 1px solid #ccc;
+}
+
+.rbc-today {
+  background-color: #ffcccc;
+}
+
+.rbc-event {
+  background-color: #e6f7ff;
+  border: 1px solid #1890ff;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.rbc-event-label {
+  font-size: 12px;
+}

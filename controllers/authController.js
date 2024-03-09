@@ -88,7 +88,7 @@ export const loginController = async (req, res) => {
     }
     //if password matches now generate token
     const token = await JWT.sign({ _id: user._id }, process.env.JWT_SECRET, {
-      expiresIn: "7d",
+      expiresIn: "365d",
     });
     res.status(200).send({
       success: true,
@@ -239,6 +239,25 @@ export const orderStatusController = async (req, res) => {
     res.status(500).send({
       success: false,
       message: "Error While Updateing Order",
+      error,
+    });
+  }
+};
+
+export const getAllUsersController = async (req, res) => {
+  try {
+    const users = await userModel.find({});
+    const totalUsers = users.length;
+    res.status(200).send({
+      success: true,
+      totalUsers,
+      users,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({
+      success: false,
+      message: "Error fetching all users",
       error,
     });
   }
