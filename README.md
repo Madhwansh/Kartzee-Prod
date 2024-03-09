@@ -19,12 +19,12 @@ The backend is built with Express, MongoDB, and Node.js. In the root directory, 
 ## Admin Dashboard
 
 ### AdminMenu
-The Admin Dashboard features a side panel called AdminMenu, located in [Client->src->components->AdminMenu.js](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb). AdminMenu contains options and routes to specific screens.
+The Admin Dashboard features a side panel called AdminMenu, located in (client->src->components->AdminMenu.js) (https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb). AdminMenu contains options and routes to specific screens.
 
 ![AdminMenu](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb)
 
 ### AdminDashboard
-Upon opening the Dashboard screen, an introductory screen is presented, containing the admin credentials and the operations that can be performed by the admin. Find the AdminDashboard file at [client->src->pages->Admin->AdminDashboard.js](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703).
+Upon opening the Dashboard screen, an introductory screen is presented, containing the admin credentials and the operations that can be performed by the admin. Find the AdminDashboard file at (client->src->pages->Admin->AdminDashboard.js)(https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703).
 
 ![AdminDashboard](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703)
 
@@ -71,3 +71,7 @@ This section allows toggling the status of orders placed by users and viewing or
 Here, all users available on the app and their details can be viewed.
 
 ![AllUsers](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b655ae6d-10eb-41bd-8253-a27fd280503f)
+
+
+A Video Demonstration of Admin Dashboard is available in this link :- 
+https://www.loom.com/share/8e021d1f7f284220b6ba7f31c6b72877?sid=3bbbed1f-9552-4578-9810-d27211f2a246
