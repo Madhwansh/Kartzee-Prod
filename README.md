@@ -5,6 +5,8 @@
 ### Client Side / Frontend
 The client-side utilizes the React.js framework with Bootstrap and External CSS for styling. To install, simply run the following command:
 ```bash
+npm install // to install dependencies
+
 npm start
 ```
 Ensure to provide the localhost server link where the backend server would be hosted in an env file.
@@ -15,6 +17,14 @@ The backend is built with Express, MongoDB, and Node.js. In the root directory, 
 - MongoDB URL
 - JWT key
 - BRAINTREE API keys (used for payment integration within the app)
+
+```bash
+npm install // to install dependencies
+
+npm start // nodemon server
+```
+
+
 
 ## Admin Dashboard
 
@@ -73,5 +83,5 @@ Here, all users available on the app and their details can be viewed.
 ![AllUsers](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/b655ae6d-10eb-41bd-8253-a27fd280503f)
 
 
-A Video Demonstration of Admin Dashboard is available in this link :- 
+# A Video Demonstration of Admin Dashboard is available :-
 https://www.loom.com/share/8e021d1f7f284220b6ba7f31c6b72877?sid=3bbbed1f-9552-4578-9810-d27211f2a246
