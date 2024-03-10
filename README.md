@@ -29,12 +29,12 @@ npm start // nodemon server
 ## Admin Dashboard
 
 ### AdminMenu
-The Admin Dashboard features a side panel called AdminMenu, located in (client->src->components->AdminMenu.js) (https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb). AdminMenu contains options and routes to specific screens.
+The Admin Dashboard features a side panel called AdminMenu, located in (client->src->components->AdminMenu.js). AdminMenu contains options and routes to specific screens.
 
 ![AdminMenu](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ea50e58d-525e-4159-b055-bd9597340efb)
 
 ### AdminDashboard
-Upon opening the Dashboard screen, an introductory screen is presented, containing the admin credentials and the operations that can be performed by the admin. Find the AdminDashboard file at (client->src->pages->Admin->AdminDashboard.js)(https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703).
+Upon opening the Dashboard screen, an introductory screen is presented, containing the admin credentials and the operations that can be performed by the admin. Find the AdminDashboard file at (client->src->pages->Admin->AdminDashboard.js) , All the screens related to the Admin Dashboard are found in this directory (client->src->pages->Admin).
 
 ![AdminDashboard](https://github.com/Madhwansh/Kartzee-Prod/assets/108359887/ee190169-fedf-4e60-b362-b5eada149703)
 
